@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url(https://img.freepik.com/foto-gratis/disposicion-escritorio-plano-espacio-copia_23-2148928165.jpg?t=st=1721800541~exp=1721804141~hmac=9d579608739afe435bf6fd05bc5996f11df17ca1cef956ef4718fd52ea51d602&w=1380);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    border-radius: 10px;
+    background-color: #ffffff9e;
+    display: inline-block;
+    text-align: center;
+    padding: 0.40rem 1.90rem;
+}
+
+.boton .btn {
+    padding: 0.40rem 2.1rem;
+    background-color: rgb(91, 75, 75);
+    color: white;
+    border: none;
+}
+
+.boton .btn:hover {
+    background-color: #333;
+}
+
+.impor {
+    padding-left: 20px;
+}
+
+.mensaje-error {
+    background-color: #c08cffb0;
+    margin: 15px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0.40rem 1.90rem;
+}
+
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.App {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.notas-separator {
+    height: 30px; /* Adjust the height to increase/decrease the space */
+}
+
+.notas-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+.nota {
+    float: left;
+    display: block;
+    position: relative;
+    padding: 1em;
+    width: 250px;
+    min-height: 250px;
+    margin: 0 30px 30px 0;
+    background: linear-gradient(top, #000000, #000000);
+    background-color: #f8eb98;
+    box-shadow: 5px 5px 10px -2px rgba(33, 33, 33, .3);
+    transition: transform 0.3s, top 0.3s, left 0.3s;
+    border-radius: 10px;
+}
+
+.nota:nth-child(1n) {
+    transform: rotate(4deg);
+    top: 5px;
+}
+
+.nota:nth-child(2n) {
+    transform: rotate(-3deg);
+    top: -5px;
+}
+
+.nota:nth-child(5n) {
+    transform: rotate(5deg);
+    bottom: 10px;
+}
+
+.nota:hover {
+    transform: scale(1.1) rotate(0deg);
+    z-index: 2;
+}
+
+.important {
+    border-color: red;
+    background-color: #fe6b6b;
+}
+
+.boton .btn-danger {
+    background-color: red;
+    color: white;
+}
+
+.boton .btn-danger:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 768px) {
+    .notas-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.boton .btn-danger {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; /* Añadido para dar espacio entre la nota y el botón */
+}
+
+.boton .btn-danger:hover {
+    background-color: darkred;
+}
